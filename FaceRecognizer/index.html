@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            /* do not change widdth and height anywwhere */
+            body {
+              margin: 0;
+              padding: 0;
+              width: 100vw;
+              height: 100vh;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+
+            .control, video{
+                position: relative;
+                align-items: center;
+            }
+          </style>
+          <script defer src="recognizer.js"></script>
+    </head>
+    <body>
+        <video id="video" width="720" height="560" autoplay muted playsinline></video>
+        <div class="controls">
+            <input type="button" id="recognize" onclick="start(1)"value="find user">
+            <input type="button" id="snap" onclick="start(2)" value="Register">
+        </div>
+    </body>
+
+</html>
+
